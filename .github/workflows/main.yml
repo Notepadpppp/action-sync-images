@@ -27,4 +27,4 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy --all docker://docker.io/ros:humble docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:humble
+         skopeo copy --all docker://docker.io/ros:humble docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:humble_arm --override-arch=arm64
