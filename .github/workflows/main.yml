@@ -27,4 +27,4 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/osrf/ros:humble-desktop-full docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:humble-desktop-full
+         skopeo --all copy docker://docker.io/osrf/ros:humble docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:humble
