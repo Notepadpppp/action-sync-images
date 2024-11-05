@@ -27,4 +27,4 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/oschan77/kenny0407/marslab_fastlio2:latest docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:marslab_fastlio2
+         skopeo copy docker://docker.io/ros:noetic docker://registry.cn-hangzhou.aliyuncs.com/aliyun1644678433/amd:noetic_arm --override-arch=arm64
